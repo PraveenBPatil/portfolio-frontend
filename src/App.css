@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for whole site */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default body styling */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Typing cursor blinking */
+.blinker {
+  display: inline-block;
+  width: 6px;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Card hover effect (projects section) */
+.card-anim {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-anim:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover slight zoom */
+.btn-zoom {
+  transition: transform 0.2s ease;
+}
+
+.btn-zoom:hover {
+  transform: scale(1.04);
+}
+
+/* Parallax fallback (mobile ignores background-attachment: fixed) */
+.parallax-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark mode transition (smooth theme switching) */
+* {
+  transition: background-color 0.20s ease, color 0.20s ease;
+}
+/* Loader fade out */
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1.8s ease forwards;
+}
+
+/* Text glow effect */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #b300ff; }
+  50% { text-shadow: 0 0 30px #bf00ff; }
+  100% { text-shadow: 0 0 10px #b300ff; }
+}
+
+.animate-glow {
+  animation: glow 2s infinite alternate;
+}
+/* optionally add */
+.circular-icon-shadow {
+  filter: drop-shadow(0 6px 20px rgba(232, 121, 243, 0.15));
+}
