@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaWhatsapp } from "react
 
 export default function SocialSidebar() {
   return (
-    <div className="fixed left-5 top-1/3 flex flex-col gap-5 text-white text-2xl z-50">
+    <div className="hidden md:flex fixed left-5 top-1/3 flex-col gap-5 text-white text-2xl z-50">
 
       <a href="https://github.com/PraveenBPatil" target="_blank">
         <FaGithub className="hover:text-yellow-300 transition" />
