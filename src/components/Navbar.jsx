@@ -1,5 +1,3 @@
-import DarkModeToggle from "./DarkModeToggle";
-
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-xl bg-black/30 border-b border-white/10">
@@ -35,7 +33,6 @@ export default function Navbar() {
             Resume
           </a>
 
-          <DarkModeToggle />
         </nav>
       </div>
     </header>
