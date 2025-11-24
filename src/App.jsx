@@ -3,7 +3,6 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import GlassSkills from "./components/GlassSkills";
-import TechMarquee from "./components/TechMarquee";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/FooterSection";
@@ -20,31 +19,26 @@ import MouseFollower from "./components/MouseFollower";
 export default function App() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-black via-[#0a0a0a] to-black">
-
-      {/* GLOBAL floating components */}
+      
       <LoadingScreen />
       <MouseFollower />
       <SocialSidebar />
 
       <Navbar />
 
-      {/* HERO */}
       <ScrollReveal delay={0.1}>
         <HeroSection />
       </ScrollReveal>
       <SectionDivider />
 
-      {/* ABOUT */}
       <ScrollReveal delay={0.15}>
         <AboutSection />
       </ScrollReveal>
       <SectionDivider />
 
-      {/* JOURNEY (No animation wrapper) */}
       <StickySection />
       <SectionDivider />
 
-      {/* SKILLS */}
       <ScrollReveal delay={0.28}>
         <SkillsSection />
       </ScrollReveal>
@@ -52,38 +46,33 @@ export default function App() {
       <ScrollReveal delay={0.3}>
         <GlassSkills />
       </ScrollReveal>
+
+      {/* ❌ Removed TechMarquee */}
+      {/* <ScrollReveal delay={0.33}>
+          <TechMarquee />
+      </ScrollReveal> */}
+
       <SectionDivider />
 
-      {/* TECHNOLOGIES */}
-      <ScrollReveal delay={0.33}>
-        <TechMarquee />
-      </ScrollReveal>
-      <SectionDivider />
-
-      {/* RESUME */}
       <ScrollReveal delay={0.35}>
         <ResumeSection />
       </ScrollReveal>
 
-      {/* TESTIMONIALS */}
       <ScrollReveal delay={0.38}>
         <TestimonialsSection />
       </ScrollReveal>
       <SectionDivider />
 
-      {/* PROJECTS */}
       <ScrollReveal delay={0.4}>
         <ProjectsSection />
       </ScrollReveal>
 
-      {/* CONTACT */}
       <ScrollReveal delay={0.45}>
         <ContactSection />
       </ScrollReveal>
 
       <BackToTop />
 
-      {/* FOOTER */}
       <ScrollReveal delay={0.5}>
         <FooterSection />
       </ScrollReveal>
